@@ -1,0 +1,61 @@
+::-webkit-scrollbar {
+   width: 10px;
+}
+::-webkit-scrollbar-track {
+   background-color: #ccc;
+}
+::-webkit-scrollbar-thumb {
+   background-color: #09c;
+}
+body {
+   overflow-x: hidden;
+}
+.item {
+   position: relative;
+}
+img {
+   cursor: pointer;
+}
+.text {
+   position: absolute;
+   bottom: 10%;
+   left: 10%;
+   right: 10%;
+   background-color: #fff;
+   padding: 10px;
+}
+.model {
+   background-color: rgb(0 0 0 / 0.5);
+   position: fixed;
+   inset: 0;
+   z-index: 999;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+.model .box {
+   width: 90vw;
+   height: 90vh;
+   background: url("../images/portfolio-1.jpg") center / 100% 100% no-repeat;
+   border-radius: 5px;
+}
+i {
+   margin: 20px;
+   cursor: pointer;
+   font-size: 1.6rem;
+   color: #fff;
+}
+
+i:hover {
+   filter: drop-shadow(0 0 10px #fff7);
+}
+
+.animate__bounceInLeft,
+.animate__bounceInRight {
+   --animate-duration: 0.5s;
+}
+
+.animate__fadeInLeft,
+.animate__fadeInRight {
+   --animate-delay: 0.9s;
+}
